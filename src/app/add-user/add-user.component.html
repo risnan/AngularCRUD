@@ -1,0 +1,38 @@
+<div class="jumbotron">
+  <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+<h2 class="text-center">Add User</h2>
+<form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" formControlName="id" class="form-control" placeholder="Enter the id" id="id"/>
+      </div>
+
+  <div class="form-group">
+    <label for="employee_name">Employee Name:</label>
+    <input type="employee_name" formControlName="employee_name" class="form-control" placeholder="Enter the Employee Name" id="employee_name"/>
+  </div>
+
+  <div class="form-group">
+      <label for="employee_salary">Employee Salary:</label>
+      <input type="employee_salary" formControlName="employee_salary" class="form-control" placeholder="Enter the Employee Salary" id="employee_salary"/>
+  </div>
+
+  <div class="form-group">
+      <label for="employee_age">Employee Age:</label>
+      <input type="employee_age" formControlName="employee_age" class="form-control" placeholder="Enter the Employee Age" id="employee_age"/>
+  </div>
+<div class="form-group">
+  <!-- <label for="profile_image">profile_image:</label>
+  <input type="profile_image" formControlName="profile_image" class="form-control" id="profile_image"/> -->
+<span style="color:red;" *ngIf="message">{{message}}</span>
+<input #file type="file" accept='image/*' (change)="preview(file.files)" />
+<img [src]="imgURL" height="200" *ngIf="imgURL">
+  
+</div>
+  <button class="btn btn-success">ADD</button>
+</form>
+</div> 
+</div> 
+</div> 

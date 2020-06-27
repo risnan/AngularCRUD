@@ -1,0 +1,16 @@
+
+
+div {
+  border-radius: 10px;
+  background-color: #b3adad;
+  padding: 10px;
+}
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
